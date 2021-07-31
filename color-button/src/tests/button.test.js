@@ -13,7 +13,7 @@ describe("BUTTON COMPONENT TESTS", () => {
   test("button has the initial text", () => {
     render(<ButtonComponent></ButtonComponent>);
     const btn = screen.getByRole("button", { name: "Change to blue" });
-    expect(btn.textContent).toBe("Change to blue");
+    expect(btn).toHaveTextContent("Change to blue");
   });
 
   test("button turns to blue when clicked", () => {
@@ -34,6 +34,6 @@ describe("BUTTON COMPONENT TESTS", () => {
     expect(btn).toBeDisabled();
 
     fireEvent.click(check);
-    expect(btn).toBeEnabled();
+    expect(btn).toBeDisabled();
   });
 });
