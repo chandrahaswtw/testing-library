@@ -1,10 +1,10 @@
-import './App.css';
-import ButtonComponent from "./components/button";
+import "./App.css";
+import OrderSummary from "./components/order-summary/checkBoxSection";
 
 function App() {
   return (
     <div className="App">
-        <ButtonComponent></ButtonComponent>
+      <OrderSummary></OrderSummary>
     </div>
   );
 }
