@@ -1,10 +1,11 @@
 import "./App.css";
-import OrderSummary from "./components/order-summary/checkBoxSection";
+// import OrderSummary from "./components/order-summary/checkBoxSection";
+import OrderEntry from "./components/options/OrderEntry";
 
 function App() {
   return (
     <div className="App">
-      <OrderSummary></OrderSummary>
+      <OrderEntry></OrderEntry>
     </div>
   );
 }
